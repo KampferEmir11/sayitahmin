@@ -1,0 +1,189 @@
+*{
+    margin: 0;
+    padding: 0;
+    outline: none;
+    box-sizing: border-box;
+}
+body {
+    background-color: turquoise;
+}
+body .deger {
+    width: 100px;
+    height: 100px;
+    text-align: center;
+    font-weight: 1000;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 18px;
+    z-index: 1000;
+}
+body .container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50% , -50%);
+}
+body .hesapla {
+    background-color: blue;
+    color: #fff;
+    border: none;
+    border-radius: 30rem;
+    transition: 0.2s;
+    cursor: pointer;
+    width: 100px;
+    height: 50px;
+}
+body .hesapla:hover{
+    background-color: #FFA000;
+    color: black;
+}
+body .clear {
+    background-color:white;
+    color: black;
+    cursor: pointer;
+    border: none;
+    transition: 0.2s;
+    width: 100px;
+    height: 50px;
+    border-radius: 30rem;
+}
+body .clear:hover{
+    background-color: black;
+    color: white;
+}
+body .title {
+    color: #fafafa;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    user-select: none;
+    text-align: center;
+    margin-top: 50px;
+}
+body .restart {
+    width: 100px;
+    height: 50px;
+    text-align: center;
+    cursor: pointer;
+    border: none;
+    background-color: black;
+    color: white;
+    border-radius: 30rem;
+    margin: 2rem;
+    transition: 0.2s;
+}
+body .restart:hover{
+    background-color: white;
+    color: black;
+    transform: scale(1.045);
+}
+body .bilgilendirme {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 20px;
+    font-weight: 1000;
+    font-style: italic;
+    user-select: none;
+}
+body .durum {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: white;
+    user-select: none;
+    margin-left: 20px;
+}
+body .yapimci {
+    color: black;
+    font-family: 'Courier New', Courier, monospace;
+    font-style: italic;
+    user-select: none;
+    font-size: 19px;
+    position: absolute;
+    transform: translateY(1850%);
+    margin-left: 1200px;
+}
+@media(width: 360px) and (height: 740px){
+    body .title {
+        display: none;
+    }
+    body .bilgilendirme {
+        font-size: 15px;
+    }
+}
+@media(width:375px ) and (height:667px ){
+    body .title{
+        display: none;
+    }
+}
+@media(width:430px ) and (height:932px){
+    body .deger {
+        transform: translateX(-50%);
+    }
+    body .hesapla, .clear{
+        transform: translateX(-50%);
+    }
+    body .title {
+        transform: translateX(-12%);
+    }
+    body .durum {
+        font-size: 15px;
+    }
+    body .bilgilendirme {
+        font-size: 15px;
+    }
+}
+@media(width:768px ) and (height:1024px){
+    body .title {
+        display: none;
+    }
+    body .deger {
+        margin: -14rem;
+        transform: translateY(-150%);
+    }
+    body .hesapla, .clear{
+        margin: -14rem;
+        transform: translateY(-155%);
+    }
+    body .clear {
+        margin-top: 15px;
+    }
+}
+@media(width:1024px ) and (height:1366px){
+    body .deger {
+        width: 150px;
+        height: 150px;
+        font-size: 25px;
+    }
+    body .title {
+        font-size: 46px;
+        transform: translateY(150%);
+    }
+    body .hesapla , .clear{
+        width: 150px;
+        height: 70px;
+        font-size: 25px;
+    }
+    body .clear {
+        display: none;
+    }
+}
+@media(width:768px ) and (height:1024px){
+    body .deger {
+        width: 150px;
+        height: 150px;
+        font-size: 25px;
+    }
+    body .title {
+        font-size: 46px;
+        transform: translateY(150%);
+    }
+    body .hesapla , .clear{
+        width: 150px;
+        height: 70px;
+        font-size: 25px;
+    }
+    body .clear {
+        display: none;
+    }
+    body .container {
+        position: absolute;
+        top: 50%;
+        left: 50%;     
+        transform: translate(-50%,-50%);
+    }
+}
